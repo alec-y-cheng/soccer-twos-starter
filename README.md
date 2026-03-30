@@ -73,5 +73,6 @@ To examine the baseline agent, you must extract the `ceia_baseline_agent` folder
 
 , to examine the random agent vs. the baseline agent.
 
+scp -r acheng324@<cluster-address>:/home/hice1/acheng324/scratch/soccer-twos-starter/ray_results ./ray_results to copy results to local machine
 
 

@@ -13,11 +13,11 @@
 #SBATCH -t12:00:00
 #SBATCH --output=soccerstwos-%j.out
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=gburbell3@gatech.edu
+#SBATCH --mail-user=acheng324@gatech.edu
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate soccerstwos
+source ~/scratch/miniconda/etc/profile.d/conda.sh
+conda activate soccertwos
 
 # Run the training script
-python example_ray_ppo_sp_still.py
+python train_ray_curriculum.py
 

@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Mar-30-2026 14:45:16
+Job ID:    4556697
+User ID:   acheng324
+Account:   coc
+Job name:  soccerstwos
+Partition: pace-cpu
+QOS:       coe-ice
+---------------------------------------
+/var/lib/slurm/slurmd/job4556697/slurm_script: line 18: /home/hice1/acheng324/miniconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/storage/ice1/4/7/acheng324/soccer-twos-starter/train_ray_curriculum.py", line 1, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+---------------------------------------
+Begin Slurm Epilog: Mar-30-2026 14:45:16
+Job ID:        4556697
+User ID:       acheng324
+Account:       coc
+Job name:      soccerstwos
+Resources:     cpu=32,mem=192G,node=4
+Rsrc Used:     cput=00:00:32,vmem=0,walltime=00:00:01,mem=32252K,energy_used=0
+Partition:     pace-cpu
+QOS:           coe-ice
+Nodes:         atl1-1-02-010-1-[1-2],atl1-1-02-010-2-[1-2]
+---------------------------------------

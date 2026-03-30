@@ -48,7 +48,8 @@ class CurriculumUpdateCallback(DefaultCallbacks):
 
 
 if __name__ == "__main__":
-    ray.init()
+    #ray.init()
+    ray.init(include_dashboard=False, _node_ip_address='127.0.0.1')
 
     tune.registry.register_env("Soccer", create_rllib_env)
     temp_env = create_rllib_env()
@@ -62,7 +63,7 @@ if __name__ == "__main__":
         config={
             # system settings
             "num_gpus": 1,
-            "num_workers": 14,
+            "num_workers": 30,
             "num_envs_per_worker": NUM_ENVS_PER_WORKER,
             "log_level": "INFO",
             "framework": "torch",
