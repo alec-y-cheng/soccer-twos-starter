@@ -8,6 +8,8 @@ from soccer_twos import EnvType
 from utils import create_rllib_env, sample_pos_vel, sample_player
 
 
+# Should be < (--cpus-per-task - 2) in the batch script to leave headroom for
+# the driver process and Ray object store. With --cpus-per-task=16, 14 is safe.
 NUM_ENVS_PER_WORKER = 3
 
 current = 0
@@ -48,8 +50,10 @@ class CurriculumUpdateCallback(DefaultCallbacks):
 
 
 if __name__ == "__main__":
-    #ray.init()
-    ray.init(include_dashboard=False, _node_ip_address='127.0.0.1')
+    # include_dashboard=False prevents Ray from trying to bind a dashboard port,
+    # which fails on SLURM compute nodes. _node_ip_address forces Ray to bind
+    # to localhost instead of trying to resolve the node's external hostname.
+    ray.init(include_dashboard=False, _node_ip_address="0.0.0.0")
 
     tune.registry.register_env("Soccer", create_rllib_env)
     temp_env = create_rllib_env()
@@ -63,7 +67,7 @@ if __name__ == "__main__":
         config={
             # system settings
             "num_gpus": 1,
-            "num_workers": 30,
+            "num_workers": 14,
             "num_envs_per_worker": NUM_ENVS_PER_WORKER,
             "log_level": "INFO",
             "framework": "torch",
