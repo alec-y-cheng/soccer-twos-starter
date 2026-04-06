@@ -4,6 +4,39 @@ import gym
 from ray.rllib import MultiAgentEnv
 import soccer_twos
 
+class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
+    def __init__(self, env):
+        super().__init__(env)
+    
+    def step(self, action):
+        obs, reward, done, info = self.env.step(action)
+        shaped_reward = {}
+
+        for player_id, player_obs in obs.items():
+            # add to this
+            shaped_reward[player_id] = reward[player_id]
+            
+            # extract every 8th element (the boolean hits for the ball)
+            # and every 8th element starting at index 7 (the distances)
+            ball_hits = player_obs[0::8]
+            distances = player_obs[7::8]
+            
+            closest_dist = 1.0
+            
+            # find closest hit
+            for i in range(len(ball_hits)):
+                if ball_hits[i] == 1.0:
+                    if distances[i] < closest_dist:
+                        closest_dist = distances[i]
+            
+            # 0.005 / 1.0 = 0.005 (when far)
+            # 0.005 / 0.0 = infinity (use + 1.0 to cap it at small value)
+            # Maximum extra reward per second is ~0.15, keeping goals (+1.0) important
+            if closest_dist < 1.0:
+                proximity_bonus = 0.005 * (1.0 - closest_dist) 
+                shaped_reward[player_id] += proximity_bonus
+                
+        return obs, shaped_reward, done, info
 
 class RLLibWrapper(gym.core.Wrapper, MultiAgentEnv):
     """
@@ -29,6 +62,7 @@ def create_rllib_env(env_config: dict = {}):
         )
     env = soccer_twos.make(**env_config)
     # env = TransitionRecorderWrapper(env)
+    env = CustomRewardShaping(env)
     if "multiagent" in env_config and not env_config["multiagent"]:
         # is multiagent by default, is only disabled if explicitly set to False
         return env
