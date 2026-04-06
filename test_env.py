@@ -1,4 +1,5 @@
 import soccer_twos
+import numpy as np
 
 # Create a random env 
 env = soccer_twos.make(single_player=True)
@@ -7,5 +8,6 @@ env = soccer_twos.make(single_player=True)
 obs = env.reset()
 
 print("OBSERVATION TYPE:", type(obs))
-print("OBSERVATION SHAPE:", obs.shape)
-print("OBSERVATION DATA:", obs)
+for player_id, player_obs in obs.items():
+    print(f"PLAYER {player_id} SHAPE: {np.array(player_obs).shape}")
+    print(f"PLAYER {player_id} DATA:", player_obs)
