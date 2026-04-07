@@ -1,0 +1,330 @@
+/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775595969.982495 4008732 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:19,802	WARNING ppo.py:135 -- `train_batch_size` (4000) cannot be achieved with your other settings (num_workers=14 num_envs_per_worker=3 rollout_fragment_length=5000)! Auto-adjusting `rollout_fragment_length` to 95.
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m I0000 00:00:1775595982.382220 4008851 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m I0000 00:00:1775595982.440502 4008870 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m I0000 00:00:1775595982.453109 4008872 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m I0000 00:00:1775595982.461034 4008860 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m I0000 00:00:1775595982.479401 4008856 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m I0000 00:00:1775595982.494278 4008873 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m I0000 00:00:1775595982.555612 4008869 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m I0000 00:00:1775595982.511847 4008857 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m I0000 00:00:1775595982.524879 4008874 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m I0000 00:00:1775595982.578516 4008861 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m I0000 00:00:1775595982.643873 4008868 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m I0000 00:00:1775595982.653375 4008859 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m I0000 00:00:1775595982.734026 4008855 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m I0000 00:00:1775595982.752858 4008867 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m 2026-04-07 17:06:23,246	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m 2026-04-07 17:06:23,359	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m 2026-04-07 17:06:23,463	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:23,587	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m 2026-04-07 17:06:23,582	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m 2026-04-07 17:06:23,586	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m 2026-04-07 17:06:23,568	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m 2026-04-07 17:06:23,610	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m 2026-04-07 17:06:23,600	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m 2026-04-07 17:06:23,597	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m 2026-04-07 17:06:23,614	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m 2026-04-07 17:06:23,611	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m 2026-04-07 17:06:23,657	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m 2026-04-07 17:06:23,664	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m 2026-04-07 17:06:24,624	INFO torch_policy.py:134 -- TorchPolicy (worker=2) running on CPU.
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=5) running on CPU.
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=7) running on CPU.
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=9) running on CPU.
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:24,623	INFO torch_policy.py:134 -- TorchPolicy (worker=1) running on CPU.
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=13) running on CPU.
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m 2026-04-07 17:06:24,622	INFO torch_policy.py:134 -- TorchPolicy (worker=10) running on CPU.
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m 2026-04-07 17:06:24,624	INFO torch_policy.py:134 -- TorchPolicy (worker=4) running on CPU.
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=11) running on CPU.
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m 2026-04-07 17:06:24,622	INFO torch_policy.py:134 -- TorchPolicy (worker=6) running on CPU.
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=8) running on CPU.
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=12) running on CPU.
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m 2026-04-07 17:06:24,622	INFO torch_policy.py:134 -- TorchPolicy (worker=14) running on CPU.
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m 2026-04-07 17:06:24,621	INFO torch_policy.py:134 -- TorchPolicy (worker=3) running on CPU.
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m I0000 00:00:1775595987.602534 4008860 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m I0000 00:00:1775595987.602840 4008856 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m I0000 00:00:1775595987.602553 4008873 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m I0000 00:00:1775595987.601640 4008869 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m I0000 00:00:1775595987.601650 4008857 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m I0000 00:00:1775595987.601671 4008874 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m I0000 00:00:1775595987.601702 4008861 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m I0000 00:00:1775595987.602401 4008868 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m I0000 00:00:1775595987.601713 4008859 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m I0000 00:00:1775595987.602549 4008855 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m I0000 00:00:1775595987.601677 4008867 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m I0000 00:00:1775595988.535321 4008869 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m I0000 00:00:1775595988.627028 4008857 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m I0000 00:00:1775595988.675951 4008856 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m I0000 00:00:1775595988.637538 4008874 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m I0000 00:00:1775595988.666068 4008861 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m I0000 00:00:1775595988.642576 4008868 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m I0000 00:00:1775595988.671933 4008855 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m I0000 00:00:1775595988.709947 4008860 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m I0000 00:00:1775595988.703402 4008859 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008869, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008861, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008855, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008857, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008874, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008868, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:29,585	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008860, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:29,623	INFO torch_policy.py:148 -- TorchPolicy (worker=local) running on 1 GPU(s).
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008859, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008873, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008867, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m I0000 00:00:1775595990.450835 4008870 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m I0000 00:00:1775595990.478754 4008872 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008870, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008872, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=4008851, ip=172.27.147.8)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:48,721	INFO rollout_worker.py:1199 -- Built policy map: {'default_policy': <ray.rllib.policy.policy_template.PPOTorchPolicy object at 0x153a7cb88d90>}
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:48,721	INFO rollout_worker.py:1200 -- Built preprocessor map: {'default_policy': <ray.rllib.models.preprocessors.NoPreprocessor object at 0x153a7cb88be0>}
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:48,722	INFO rollout_worker.py:583 -- Built filter map: {'default_policy': <ray.rllib.utils.filter.NoFilter object at 0x153a7cb88bb0>}
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:48,725	INFO trainable.py:101 -- Trainable.setup took 28.924 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:06:48,726	WARNING util.py:53 -- Install gputil for GPU system monitoring.
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,808	INFO rollout_worker.py:723 -- Generating sample batch of size 285
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,823	INFO sampler.py:590 -- Raw obs from env: { 0: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   1: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   2: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)}}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,824	INFO sampler.py:592 -- Info return from env: { 0: {'agent0': None},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   1: {'agent0': None},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   2: {'agent0': None}}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,824	INFO sampler.py:813 -- Preprocessed obs: np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,824	INFO sampler.py:817 -- Filtered obs: np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,826	INFO sampler.py:1004 -- Inputs to compute_actions():
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m { 'default_policy': [ { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'env_id': 0,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'info': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_action': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'rnn_state': None},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'type': 'PolicyEvalData'},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                       { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'env_id': 1,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'info': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_action': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'rnn_state': None},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'type': 'PolicyEvalData'},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                       { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'env_id': 2,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'info': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_action': None,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                                   'rnn_state': None},
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'type': 'PolicyEvalData'}]}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:48,978	INFO sampler.py:1022 -- Outputs of compute_actions():
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m { 'default_policy': ( np.ndarray((3,), dtype=int64, min=9.0, max=23.0, mean=14.333),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                       [],
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                       { 'action_dist_inputs': np.ndarray((3, 27), dtype=float32, min=-0.003, max=0.003, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'action_logp': np.ndarray((3,), dtype=float32, min=-3.298, max=-3.296, mean=-3.297),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'action_prob': np.ndarray((3,), dtype=float32, min=0.037, max=0.037, mean=0.037),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m                         'vf_preds': np.ndarray((3,), dtype=float32, min=0.0, max=0.0, mean=0.0)})}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:58,428	INFO simple_list_collector.py:659 -- Trajectory fragment after postprocess_trajectory():
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m { 'agent0': { 'action_dist_inputs': np.ndarray((379, 27), dtype=float32, min=-0.006, max=0.007, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'action_logp': np.ndarray((379,), dtype=float32, min=-3.301, max=-3.291, mean=-3.296),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'actions': np.ndarray((379,), dtype=int64, min=0.0, max=26.0, mean=13.224),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'advantages': np.ndarray((379,), dtype=float32, min=0.1, max=1.246, mean=0.495),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'agent_index': np.ndarray((379,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'dones': np.ndarray((379,), dtype=bool, min=0.0, max=1.0, mean=0.003),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'eps_id': np.ndarray((379,), dtype=int64, min=1580850778.0, max=1580850778.0, mean=1580850778.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'infos': np.ndarray((379,), dtype=object, head={'player_info': {'position': np.ndarray((2,), dtype=float32, min=-8.415, max=0.722, mean=-3.846), 'rotation_y': 80.10908, 'velocity': np.ndarray((2,), dtype=float32, min=-5.216, max=5.596, mean=0.19)}, 'ball_info': {'position': np.ndarray((2,), dtype=float32, min=-2.533, max=13.654, mean=5.56), 'velocity': np.ndarray((2,), dtype=float32, min=0.0, max=0.0, mean=0.0)}}),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'new_obs': np.ndarray((379, 336), dtype=float32, min=0.0, max=1.0, mean=0.176),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'obs': np.ndarray((379, 336), dtype=float32, min=0.0, max=1.0, mean=0.176),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'rewards': np.ndarray((379,), dtype=float32, min=0.0, max=1.247, mean=0.005),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'unroll_id': np.ndarray((379,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'value_targets': np.ndarray((379,), dtype=float32, min=0.1, max=1.247, mean=0.496),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m               'vf_preds': np.ndarray((379,), dtype=float32, min=-0.003, max=0.006, mean=0.001)}}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 2026-04-07 17:06:58,444	INFO rollout_worker.py:761 -- Completed sample batch:
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m { 'action_dist_inputs': np.ndarray((379, 27), dtype=float32, min=-0.006, max=0.007, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'action_logp': np.ndarray((379,), dtype=float32, min=-3.301, max=-3.291, mean=-3.296),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'actions': np.ndarray((379,), dtype=int64, min=0.0, max=26.0, mean=13.224),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'advantages': np.ndarray((379,), dtype=float32, min=0.1, max=1.246, mean=0.495),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'agent_index': np.ndarray((379,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'dones': np.ndarray((379,), dtype=bool, min=0.0, max=1.0, mean=0.003),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'eps_id': np.ndarray((379,), dtype=int64, min=1580850778.0, max=1580850778.0, mean=1580850778.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'infos': np.ndarray((379,), dtype=object, head={'player_info': {'position': np.ndarray((2,), dtype=float32, min=-8.415, max=0.722, mean=-3.846), 'rotation_y': 80.10908, 'velocity': np.ndarray((2,), dtype=float32, min=-5.216, max=5.596, mean=0.19)}, 'ball_info': {'position': np.ndarray((2,), dtype=float32, min=-2.533, max=13.654, mean=5.56), 'velocity': np.ndarray((2,), dtype=float32, min=0.0, max=0.0, mean=0.0)}}),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'new_obs': np.ndarray((379, 336), dtype=float32, min=0.0, max=1.0, mean=0.176),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'obs': np.ndarray((379, 336), dtype=float32, min=0.0, max=1.0, mean=0.176),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'rewards': np.ndarray((379,), dtype=float32, min=0.0, max=1.247, mean=0.005),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'unroll_id': np.ndarray((379,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'value_targets': np.ndarray((379,), dtype=float32, min=0.1, max=1.247, mean=0.496),
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m   'vf_preds': np.ndarray((379,), dtype=float32, min=-0.003, max=0.006, mean=0.001)}
+[2m[36m(pid=4008856, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:07:11,839	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=11172, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:07:11,871	INFO rollout_worker.py:901 -- Training on concatenated sample batches:
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m { 'count': 128,
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m   'policy_batches': { 'default_policy': { 'action_dist_inputs': np.ndarray((128, 27), dtype=float32, min=-0.006, max=0.006, mean=0.0),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'action_logp': np.ndarray((128,), dtype=float32, min=-3.3, max=-3.291, mean=-3.296),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'actions': np.ndarray((128,), dtype=int64, min=0.0, max=26.0, mean=12.328),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'advantages': np.ndarray((128,), dtype=float32, min=-0.713, max=6.092, mean=0.018),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'agent_index': np.ndarray((128,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'dones': np.ndarray((128,), dtype=bool, min=0.0, max=1.0, mean=0.008),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'eps_id': np.ndarray((128,), dtype=int64, min=346941170.0, max=1855585603.0, mean=1275687127.648),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'infos': np.ndarray((128,), dtype=object, head={'player_info': {'position': np.ndarray((2,), dtype=float32, min=-15.417, max=2.867, mean=-6.275), 'rotation_y': 172.20796, 'velocity': np.ndarray((2,), dtype=float32, min=-2.205, max=1.938, mean=-0.133)}, 'ball_info': {'position': np.ndarray((2,), dtype=float32, min=-3.984, max=13.023, mean=4.519), 'velocity': np.ndarray((2,), dtype=float32, min=0.0, max=0.0, mean=0.0)}}),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'new_obs': np.ndarray((128, 336), dtype=float32, min=0.0, max=1.0, mean=0.175),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'obs': np.ndarray((128, 336), dtype=float32, min=0.0, max=1.0, mean=0.174),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'rewards': np.ndarray((128,), dtype=float32, min=0.0, max=0.907, mean=0.008),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'unroll_id': np.ndarray((128,), dtype=int64, min=0.0, max=0.0, mean=0.0),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'value_targets': np.ndarray((128,), dtype=float32, min=-0.0, max=1.225, mean=0.129),
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m                                           'vf_preds': np.ndarray((128,), dtype=float32, min=-0.002, max=0.004, mean=0.001)}},
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m   'type': 'MultiAgentBatch'}
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:07:35,703	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=13455, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:07:55,936	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=14000, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:08:37,765	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=9206, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:09:01,058	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=13435, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:09:27,658	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=13428, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:10:02,836	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=10389, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:10:28,076	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=11815, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:10:52,652	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=9736, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:11:12,245	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=10393, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:11:39,466	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=9305, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+[2m[36m(pid=4008864, ip=172.27.147.8)[0m 2026-04-07 17:12:04,191	INFO rollout_ops.py:180 -- Collected more training samples than expected (actual=10350, expected=4000). This may be because you have many workers or long episodes in 'complete_episodes' batch mode.
+2026-04-07 17:12:18,419	INFO tune.py:549 -- Total run time: 361.72 seconds (359.72 seconds for the tuning loop).

@@ -1,0 +1,669 @@
+/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775509515.336666 2987475 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:25,349	WARNING ppo.py:135 -- `train_batch_size` (4000) cannot be achieved with your other settings (num_workers=14 num_envs_per_worker=3 rollout_fragment_length=5000)! Auto-adjusting `rollout_fragment_length` to 95.
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m I0000 00:00:1775509527.890392 2987841 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m I0000 00:00:1775509527.880789 2987832 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m I0000 00:00:1775509527.851172 2987825 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m I0000 00:00:1775509527.866717 2987840 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m I0000 00:00:1775509527.896362 2987836 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m I0000 00:00:1775509527.928487 2987824 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m I0000 00:00:1775509527.920514 2987829 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m I0000 00:00:1775509527.919259 2987847 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m I0000 00:00:1775509527.930577 2987835 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m I0000 00:00:1775509527.944790 2987830 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m I0000 00:00:1775509527.944168 2987837 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m I0000 00:00:1775509527.945705 2987839 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m I0000 00:00:1775509527.949808 2987842 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m I0000 00:00:1775509528.053009 2987833 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m 2026-04-06 17:05:28,694	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m 2026-04-06 17:05:28,984	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m 2026-04-06 17:05:28,982	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m 2026-04-06 17:05:28,990	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m 2026-04-06 17:05:29,035	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m 2026-04-06 17:05:29,040	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m 2026-04-06 17:05:29,038	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:29,030	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m 2026-04-06 17:05:29,059	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m 2026-04-06 17:05:29,037	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m 2026-04-06 17:05:29,091	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m 2026-04-06 17:05:29,086	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m 2026-04-06 17:05:29,087	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m 2026-04-06 17:05:29,093	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=2) running on CPU.
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=4) running on CPU.
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m 2026-04-06 17:05:29,583	INFO torch_policy.py:134 -- TorchPolicy (worker=3) running on CPU.
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=5) running on CPU.
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=7) running on CPU.
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m 2026-04-06 17:05:29,584	INFO torch_policy.py:134 -- TorchPolicy (worker=10) running on CPU.
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m 2026-04-06 17:05:29,581	INFO torch_policy.py:134 -- TorchPolicy (worker=11) running on CPU.
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=9) running on CPU.
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:29,578	INFO torch_policy.py:134 -- TorchPolicy (worker=1) running on CPU.
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m 2026-04-06 17:05:29,580	INFO torch_policy.py:134 -- TorchPolicy (worker=12) running on CPU.
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=14) running on CPU.
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m 2026-04-06 17:05:29,578	INFO torch_policy.py:134 -- TorchPolicy (worker=8) running on CPU.
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m 2026-04-06 17:05:29,577	INFO torch_policy.py:134 -- TorchPolicy (worker=6) running on CPU.
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m 2026-04-06 17:05:29,578	INFO torch_policy.py:134 -- TorchPolicy (worker=13) running on CPU.
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m I0000 00:00:1775509530.643943 2987841 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m I0000 00:00:1775509530.644034 2987832 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m I0000 00:00:1775509530.644209 2987825 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m I0000 00:00:1775509530.644102 2987840 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m I0000 00:00:1775509530.643931 2987836 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m I0000 00:00:1775509530.643883 2987824 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m I0000 00:00:1775509530.643978 2987829 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m I0000 00:00:1775509530.644113 2987847 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m I0000 00:00:1775509530.643921 2987835 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m I0000 00:00:1775509530.645235 2987830 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m I0000 00:00:1775509530.643991 2987839 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m I0000 00:00:1775509530.643936 2987842 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m I0000 00:00:1775509530.644041 2987833 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m I0000 00:00:1775509531.879734 2987832 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m I0000 00:00:1775509531.861122 2987825 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m I0000 00:00:1775509531.871844 2987836 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m I0000 00:00:1775509531.885979 2987830 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m I0000 00:00:1775509531.861011 2987839 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m I0000 00:00:1775509531.866966 2987842 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m I0000 00:00:1775509531.894474 2987841 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m I0000 00:00:1775509531.893501 2987840 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m I0000 00:00:1775509531.891453 2987824 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m I0000 00:00:1775509531.892044 2987829 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m I0000 00:00:1775509531.894818 2987847 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m I0000 00:00:1775509531.901451 2987835 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m I0000 00:00:1775509531.890242 2987833 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m I0000 00:00:1775509532.371133 2987837 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987839, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987825, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987842, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987836, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987824, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987830, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987832, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:33,053	INFO ppo_tf_policy.py:327 -- `vf_share_layers=True` in your model. Therefore, remember to tune the value of `vf_loss_coeff`!
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987841, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987840, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987829, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987847, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987833, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:33,090	INFO torch_policy.py:148 -- TorchPolicy (worker=local) running on 1 GPU(s).
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+[2m[36m(pid=2987837, ip=172.27.146.132)[0m INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,359	INFO rollout_worker.py:1199 -- Built policy map: {'default_policy': <ray.rllib.policy.policy_template.PPOTorchPolicy object at 0x15398e386df0>}
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,359	INFO rollout_worker.py:1200 -- Built preprocessor map: {'default_policy': <ray.rllib.models.preprocessors.NoPreprocessor object at 0x15398e386c40>}
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,359	INFO rollout_worker.py:583 -- Built filter map: {'default_policy': <ray.rllib.utils.filter.NoFilter object at 0x15398e386c10>}
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,371	INFO trainable.py:101 -- Trainable.setup took 33.023 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,373	WARNING util.py:53 -- Install gputil for GPU system monitoring.
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,471	INFO rollout_worker.py:723 -- Generating sample batch of size 285
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,485	INFO sampler.py:590 -- Raw obs from env: { 0: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m   1: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m   2: { 'agent0': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)}}
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,486	INFO sampler.py:592 -- Info return from env: { 0: {'agent0': None},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m   1: {'agent0': None},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m   2: {'agent0': None}}
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,486	INFO sampler.py:813 -- Preprocessed obs: np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,486	INFO sampler.py:817 -- Filtered obs: np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187)
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,488	INFO sampler.py:1004 -- Inputs to compute_actions():
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m { 'default_policy': [ { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'env_id': 0,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'info': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_action': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'rnn_state': None},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'type': 'PolicyEvalData'},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                       { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'env_id': 1,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'info': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_action': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'rnn_state': None},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'type': 'PolicyEvalData'},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                       { 'data': { 'agent_id': 'agent0',
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'env_id': 2,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'info': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'obs': np.ndarray((336,), dtype=float32, min=0.0, max=1.0, mean=0.187),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_action': None,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'prev_reward': 0.0,
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                                   'rnn_state': None},
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'type': 'PolicyEvalData'}]}
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 2026-04-06 17:05:58,599	INFO sampler.py:1022 -- Outputs of compute_actions():
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m { 'default_policy': ( np.ndarray((3,), dtype=int64, min=7.0, max=23.0, mean=14.667),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                       [],
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                       { 'action_dist_inputs': np.ndarray((3, 27), dtype=float32, min=-0.004, max=0.004, mean=0.0),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'action_logp': np.ndarray((3,), dtype=float32, min=-3.296, max=-3.293, mean=-3.294),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'action_prob': np.ndarray((3,), dtype=float32, min=0.037, max=0.037, mean=0.037),
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m                         'vf_preds': np.ndarray((3,), dtype=float32, min=0.002, max=0.002, mean=0.002)})}
+[2m[36m(pid=2987835, ip=172.27.146.132)[0m 
+2026-04-06 17:05:58,725	ERROR trial_runner.py:748 -- Trial PPO_Soccer_53356_00000: Error processing event.
+Traceback (most recent call last):
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/tune/trial_runner.py", line 718, in _process_trial
+    results = self.trial_executor.fetch_result(trial)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/tune/ray_trial_executor.py", line 688, in fetch_result
+    result = ray.get(trial_future[0], timeout=DEFAULT_GET_TIMEOUT)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 62, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/worker.py", line 1494, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::PPO.train_buffered()[39m (pid=2987845, ip=0.0.0.0)
+  File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/tune/trainable.py", line 173, in train_buffered
+    result = self.train()
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/agents/trainer.py", line 605, in train
+    raise e
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/agents/trainer.py", line 594, in train
+    result = Trainable.train(self)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/tune/trainable.py", line 232, in train
+    result = self.step()
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/agents/trainer_template.py", line 173, in step
+    res = next(self.train_exec_impl)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 756, in __next__
+    return next(self.built_iterator)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 843, in apply_filter
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 843, in apply_filter
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  [Previous line repeated 1 more time]
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 876, in apply_flatten
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 828, in add_wait_hooks
+    item = next(it)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  [Previous line repeated 1 more time]
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 471, in base_iterator
+    yield ray.get(futures, timeout=timeout)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 62, in wrapper
+    return func(*args, **kwargs)
+ray.exceptions.RayTaskError(AttributeError): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987842, ip=0.0.0.0)
+  File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+    return next(self.local_it)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+    yield self.sample()
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+    batches = [self.input_reader.next()]
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+    batches = [self.get_data()]
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+    item = next(self.rollout_provider)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+    base_env.send_actions(actions_to_send)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+    self.vector_env.vector_step(action_vector)
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+    obs, r, done, info = self.envs[i].step(actions[i])
+  File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+    for player_id, player_obs in obs.items():
+AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,686	INFO trainer.py:601 -- Worker crashed during call to train(). To attempt to continue training without the failed worker, set `'ignore_worker_failures': True`.
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,722	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987837, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,722	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987833, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987830, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987829, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987824, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987847, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987839, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987836, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987840, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987832, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,723	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987825, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,724	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987841, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m 2026-04-06 17:05:58,724	ERROR worker.py:78 -- Unhandled error (suppress with RAY_IGNORE_UNHANDLED_ERRORS=1): [36mray::RolloutWorker.par_iter_next()[39m (pid=2987835, ip=0.0.0.0)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 501, in ray._raylet.execute_task
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "python/ray/_raylet.pyx", line 451, in ray._raylet.execute_task.function_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/_private/function_manager.py", line 563, in actor_method_executor
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/util/iter.py", line 1151, in par_iter_next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     return next(self.local_it)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 333, in gen_rollouts
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     yield self.sample()
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/rollout_worker.py", line 726, in sample
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.input_reader.next()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 99, in next
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     batches = [self.get_data()]
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 226, in get_data
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     item = next(self.rollout_provider)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/evaluation/sampler.py", line 651, in _env_runner
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     base_env.send_actions(actions_to_send)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/base_env.py", line 363, in send_actions
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     self.vector_env.vector_step(action_vector)
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/rllib/env/vector_env.py", line 167, in vector_step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     obs, r, done, info = self.envs[i].step(actions[i])
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m   File "/storage/ice1/4/7/acheng324/soccer-twos-starter/utils.py", line 15, in step
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m     for player_id, player_obs in obs.items():
+[2m[36m(pid=2987845, ip=172.27.146.132)[0m AttributeError: 'numpy.ndarray' object has no attribute 'items'
+Traceback (most recent call last):
+  File "train_ray_curriculum.py", line 64, in <module>
+    analysis = tune.run(
+  File "/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/tune/tune.py", line 543, in run
+    raise TuneError("Trials did not complete", incomplete_trials)
+ray.tune.error.TuneError: ('Trials did not complete', [PPO_Soccer_53356_00000])

@@ -1,6 +1,7 @@
 from random import uniform as randfloat
 
 import gym
+import numpy as np
 from ray.rllib import MultiAgentEnv
 import soccer_twos
 
@@ -10,33 +11,36 @@ class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
     
     def step(self, action):
         obs, reward, done, info = self.env.step(action)
-        shaped_reward = {}
+        
+        # Handle both multi-agent (dict) and single-agent (ndarray/float) cases
+        is_multiagent = isinstance(obs, dict)
+        
+        if is_multiagent:
+            shaped_reward = {}
+            for player_id, player_obs in obs.items():
+                shaped_reward[player_id] = reward[player_id] + self._calculate_shaping(player_obs)
+            return obs, shaped_reward, done, info
+        else:
+            # Single agent case
+            shaped_reward = reward + self._calculate_shaping(obs)
+            return obs, shaped_reward, done, info
 
-        for player_id, player_obs in obs.items():
-            # add to this
-            shaped_reward[player_id] = reward[player_id]
-            
-            # extract every 8th element (the boolean hits for the ball)
-            # and every 8th element starting at index 7 (the distances)
-            ball_hits = player_obs[0::8]
-            distances = player_obs[7::8]
-            
-            closest_dist = 1.0
-            
-            # find closest hit
-            for i in range(len(ball_hits)):
-                if ball_hits[i] == 1.0:
-                    if distances[i] < closest_dist:
-                        closest_dist = distances[i]
-            
-            # 0.005 / 1.0 = 0.005 (when far)
-            # 0.005 / 0.0 = infinity (use + 1.0 to cap it at small value)
-            # Maximum extra reward per second is ~0.15, keeping goals (+1.0) important
-            if closest_dist < 1.0:
-                proximity_bonus = 0.005 * (1.0 - closest_dist) 
-                shaped_reward[player_id] += proximity_bonus
-                
-        return obs, shaped_reward, done, info
+    def _calculate_shaping(self, player_obs):
+        # extract every 8th element (the boolean hits for the ball)
+        # and every 8th element starting at index 7 (the distances)
+        ball_hits = player_obs[0::8]
+        distances = player_obs[7::8]
+        
+        closest_dist = 1.0
+        # find closest hit
+        for i in range(len(ball_hits)):
+            if ball_hits[i] == 1.0:
+                if distances[i] < closest_dist:
+                    closest_dist = distances[i]
+        
+        if closest_dist < 1.0:
+            return 0.005 * (1.0 - closest_dist)
+        return 0.0
 
 class RLLibWrapper(gym.core.Wrapper, MultiAgentEnv):
     """
