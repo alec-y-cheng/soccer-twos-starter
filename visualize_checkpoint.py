@@ -37,7 +37,7 @@ if __name__ == "__main__":
     
     # Instantiate the trainer and load the copied checkpoint
     trainer = PPOTrainer(config=config, env="Soccer")
-    checkpoint_path = "checkpoint_098/checkpoint-98-patched"
+    checkpoint_path = "/Users/dcheng/Downloads/checkpoint_000011/checkpoint-11-patched"
     print(f"Restoring from {checkpoint_path}...")
     trainer.restore(checkpoint_path)
     

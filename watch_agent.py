@@ -4,7 +4,7 @@ from ray.rllib.agents.ppo import PPOTrainer
 from soccer_twos import EnvType
 
 # ── UPDATE THIS to point at your local checkpoint file ─────────────────────
-CHECKPOINT_PATH = "./checkpoint_098/checkpoint-98-patched"
+CHECKPOINT_PATH = 'checkpoint_001514/checkpoint-1514-patched'
 
 TRAIN_CONFIG = {
     "num_gpus": 0,       
