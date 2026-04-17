@@ -1,0 +1,7 @@
+/home/hice1/acheng324/scratch/conda_envs/soccertwos/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776459981.276723 3981817 fork_posix.cc:75] Other threads are currently calling into gRPC, skipping fork() handlers
+INFO:mlagents_envs.environment:Connected to Unity environment with package version 2.1.0-exp.1 and communication version 1.5.0
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=1
+INFO:mlagents_envs.environment:Connected new brain: SoccerTwos?team=0
