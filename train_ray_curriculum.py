@@ -91,9 +91,9 @@ if __name__ == "__main__":
             "batch_mode": "complete_episodes",
         },
         stop={
-            "timesteps_total": 15000000,
-            "time_total_s": 7200, # 2h
-            "episode_reward_mean": 1.9,
+            "timesteps_total": 30_000_000,
+            "time_total_s": 14400, # 4h
+            #"episode_reward_mean": 3.0,
         },
         checkpoint_freq=5,
         checkpoint_at_end=True,

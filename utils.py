@@ -8,6 +8,33 @@ import soccer_twos
 class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
     def __init__(self, env):
         super().__init__(env)
+        self.prev_dist = {}
+    
+    def reset(self, **kwargs):
+        obs = self.env.reset(**kwargs)
+        is_multiagent = isinstance(obs, dict)
+
+        if is_multiagent:
+            self.prev_dist = {
+                player_id: self._get_distance(player_obs)
+                for player_id, player_obs in obs.items()
+            }
+        else:
+            self.prev_dist = self._get_distance(obs)
+    
+        return obs
+
+    def _get_distance(self, player_obs):
+        ball_hits = player_obs[0::8]
+        distances = player_obs[7::8]
+
+        closest_dist = 1.0
+        for i in range(len(ball_hits)):
+            if ball_hits[i] == 1.0:
+                if distances[i] < closest_dist:
+                    closest_dist = distances[i]
+
+        return closest_dist
     
     def step(self, action):
         obs, reward, done, info = self.env.step(action)
@@ -18,29 +45,29 @@ class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
         if is_multiagent:
             shaped_reward = {}
             for player_id, player_obs in obs.items():
-                shaped_reward[player_id] = reward[player_id] + self._calculate_shaping(player_obs)
+                shaped_reward[player_id] = reward[player_id] + self._calculate_shaping(player_id, player_obs)
             return obs, shaped_reward, done, info
         else:
             # Single agent case
-            shaped_reward = reward + self._calculate_shaping(obs)
+            shaped_reward = reward + self._calculate_shaping(None, obs)
             return obs, shaped_reward, done, info
 
-    def _calculate_shaping(self, player_obs):
+    def _calculate_shaping(self, pid, player_obs):
         # extract every 8th element (the boolean hits for the ball)
         # and every 8th element starting at index 7 (the distances)
-        ball_hits = player_obs[0::8]
-        distances = player_obs[7::8]
         
-        closest_dist = 1.0
-        # find closest hit
-        for i in range(len(ball_hits)):
-            if ball_hits[i] == 1.0:
-                if distances[i] < closest_dist:
-                    closest_dist = distances[i]
+        closest_dist = self._get_distance(player_obs)
         
-        if closest_dist < 1.0:
-            return 0.005 * (1.0 - closest_dist)
-        return 0.0
+        if isinstance(self.prev_dist, dict):
+            prev = self.prev_dist.get(pid, closest_dist)
+            self.prev_dist[pid] = closest_dist
+        else:
+            prev = self.prev_dist
+            self.prev_dist = closest_dist
+
+        shaping = 0.005 * (prev - closest_dist) if closest_dist < 1.0 else 0.0
+
+        return shaping
 
 class RLLibWrapper(gym.core.Wrapper, MultiAgentEnv):
     """
