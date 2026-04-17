@@ -4,7 +4,7 @@ from ray.rllib.agents.ppo import PPOTrainer
 from soccer_twos import EnvType
 
 # ── UPDATE THIS to point at your local checkpoint file ─────────────────────
-CHECKPOINT_PATH = 'checkpoint_001514/checkpoint-1514-patched'
+CHECKPOINT_PATH = 'checkpoints/checkpoint_000975/checkpoint-975-patched'
 
 TRAIN_CONFIG = {
     "num_gpus": 0,       
@@ -26,15 +26,7 @@ TRAIN_CONFIG = {
     "explore": False,     
 }
 
-def create_rllib_env(env_config={}):
-    import soccer_twos, gym
-    from ray.rllib import MultiAgentEnv
-    class RLLibWrapper(gym.core.Wrapper, MultiAgentEnv):
-        pass
-    env = soccer_twos.make(**env_config)
-    if "multiagent" in env_config and not env_config["multiagent"]:
-        return env
-    return RLLibWrapper(env)
+from utils import create_rllib_env
 
 if __name__ == "__main__":
     ray.init(include_dashboard=False)
