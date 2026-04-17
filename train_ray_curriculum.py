@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     analysis = tune.run(
         "PPO",
-        name="PPO_curriculum_obs_and_reward",
+        name="PPO_curriculum_obs_with_wall_seen",
         config={
             # system settings
             "num_gpus": 1,

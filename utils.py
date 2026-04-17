@@ -6,12 +6,14 @@ from ray.rllib import MultiAgentEnv
 import soccer_twos
 
 
-class CustomObservationWrapper(gym.ObservationWrapper):
+class CustomObservationWrapper(gym.ObservationWrapper):  
+    # logic for x and y relative position (compress obs space)
+    # also implement logic for getting unstuck when things are not visible
     def __init__(self, env):
         super().__init__(env)
 
         self.observation_space = gym.spaces.Box(  # define observaiton shape
-            low=-1.0, high=1.0, shape=(4,), dtype=np.float32
+            low=-1.0, high=2.0, shape=(10,), dtype=np.float32
         )
     
     def observation(self, obs):
@@ -23,10 +25,11 @@ class CustomObservationWrapper(gym.ObservationWrapper):
         # convert polar to cartesian with x = r * cos(theta) and y = r * sin(theta), then invert the x and y for relative position
         ball_hits = obs[0::8]
         goal_hits = obs[1::8]
+        wall_hits = obs[3::8]
         distances = obs[7::8]
         num_rays = len(ball_hits)
 
-        ball_x, ball_y, goal_x, goal_y = 0.0, 0.0, 0.0, 0.0
+        ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
         
 
         for i in range(num_rays):
@@ -36,13 +39,21 @@ class CustomObservationWrapper(gym.ObservationWrapper):
             if ball_hits[i] == 1.0:
                 ball_x = dist * np.cos(angle)
                 ball_y = dist * np.sin(angle)
+                ball_seen = 1.0
             
             if goal_hits[i] == 1.0:
                 goal_x = dist * np.cos(angle)
                 goal_y = dist * np.sin(angle)
+                goal_seen = 1.0
+                
+        # wall seen from 4 directions
+        wall_f = distances[21] if wall_hits[21] else 1.0
+        wall_b = distances[0]  if wall_hits[0]  else 1.0
+        wall_l = distances[10] if wall_hits[10] else 1.0
+        wall_r = distances[31] if wall_hits[31] else 1.0
             
 
-        return np.array([ball_x, ball_y, goal_x, goal_y])
+        return np.array([ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen, wall_f, wall_b, wall_l, wall_r], dtype=np.float32)
     
 
 class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
@@ -133,7 +144,7 @@ def create_rllib_env(env_config: dict = {}):
         )
     env = soccer_twos.make(**env_config)
     # env = TransitionRecorderWrapper(env)
-    env = CustomRewardShaping(env)
+    #env = CustomRewardShaping(env)
     env = CustomObservationWrapper(env)
     if "multiagent" in env_config and not env_config["multiagent"]:
         # is multiagent by default, is only disabled if explicitly set to False
