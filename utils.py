@@ -9,19 +9,27 @@ import soccer_twos
 class CustomObservationWrapper(gym.ObservationWrapper):  
     # logic for x and y relative position (compress obs space)
     # also implement logic for getting unstuck when things are not visible
-    def __init__(self, env):
+    def __init__(self, env, obs_type="simple"):
         super().__init__(env)
+        self.obs_type = obs_type
+
+        if obs_type == "simple":
+            shape = (4,)
+        elif obs_type == "extended":
+            shape = (10,)
+        else:
+            raise ValueError(f"Unknown obs_type: {obs_type}")
 
         self.observation_space = gym.spaces.Box(  # define observaiton shape
-            low=-1.0, high=2.0, shape=(10,), dtype=np.float32
+            low=-1.0, high=2.0, shape=shape, dtype=np.float32
         )
     
     def observation(self, obs):
         if isinstance(obs, dict):  #multi agent
-            return {pid: self.get_positions(ob) for pid, ob in obs.items()}
-        return self.get_positions(obs)  #single agent
+            return {pid: self.get_custom_obs(ob) for pid, ob in obs.items()}
+        return self.get_custom_obs(obs)  #single agent
         
-    def get_positions(self, obs):  # to ball and goal
+    def get_custom_obs(self, obs):  # to ball and goal
         # convert polar to cartesian with x = r * cos(theta) and y = r * sin(theta), then invert the x and y for relative position
         ball_hits = obs[0::8]
         goal_hits = obs[1::8]
@@ -30,7 +38,6 @@ class CustomObservationWrapper(gym.ObservationWrapper):
         num_rays = len(ball_hits)
 
         ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-        
 
         for i in range(num_rays):
             angle = (i / num_rays) * 2 * np.pi
@@ -46,12 +53,14 @@ class CustomObservationWrapper(gym.ObservationWrapper):
                 goal_y = dist * np.sin(angle)
                 goal_seen = 1.0
                 
+        if self.obs_type == "simple":
+            return np.array([ball_x, ball_y, goal_x, goal_y], dtype=np.float32)
+
         # wall seen from 4 directions
         wall_f = distances[21] if wall_hits[21] else 1.0
         wall_b = distances[0]  if wall_hits[0]  else 1.0
         wall_l = distances[10] if wall_hits[10] else 1.0
         wall_r = distances[31] if wall_hits[31] else 1.0
-            
 
         return np.array([ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen, wall_f, wall_b, wall_l, wall_r], dtype=np.float32)
     
@@ -145,7 +154,11 @@ def create_rllib_env(env_config: dict = {}):
     env = soccer_twos.make(**env_config)
     # env = TransitionRecorderWrapper(env)
     #env = CustomRewardShaping(env)
-    env = CustomObservationWrapper(env)
+    
+    obs_type = env_config.get("obs_type", "simple")
+    if obs_type != "raw":
+        env = CustomObservationWrapper(env, obs_type=obs_type)
+
     if "multiagent" in env_config and not env_config["multiagent"]:
         # is multiagent by default, is only disabled if explicitly set to False
         return env
