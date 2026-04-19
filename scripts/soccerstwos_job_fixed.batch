@@ -5,13 +5,13 @@
 
 # ── Job metadata ──────────────────────────────────────────────────────────────
 #SBATCH --job-name=soccertwos
-#SBATCH --partition=ice-gpu            # V100s here are compatible with old PyTorch
-#SBATCH --qos=coc-ice                 
+#SBATCH --partition=coe-gpu            # H200s here
+#SBATCH --qos=coe-ice                 
 #SBATCH --nodes=1                      
 #SBATCH --ntasks=1                     
 #SBATCH --cpus-per-task=16             
-#SBATCH --gres=gpu:v100:1              
-#SBATCH --mem=48G                      
+#SBATCH --gres=gpu:H100:1              
+#SBATCH --mem=64G                      
 #SBATCH -t 12:00:00                    # 12-hour wall time
 #SBATCH --output=logs/soccertwos-%j.out
 #SBATCH --error=logs/soccertwos-%j.err

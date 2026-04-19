@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     analysis = tune.run(
         "PPO",
-        name="PPO_curriculum_obs_with_wall_seen",
+        name="PPO_full_obs_reward_shaping_curric",
         config={
             # system settings
             "num_gpus": 1,
@@ -87,7 +87,8 @@ if __name__ == "__main__":
                 "fcnet_hiddens": [256, 256],
                 "fcnet_activation": "relu",
             },
-            "rollout_fragment_length": 5000,
+            "train_batch_size": 4200,
+            "rollout_fragment_length": 100,
             "batch_mode": "complete_episodes",
         },
         stop={
@@ -95,7 +96,7 @@ if __name__ == "__main__":
             "time_total_s": 14400, # 4h
             #"episode_reward_mean": 3.0,
         },
-        checkpoint_freq=5,
+        checkpoint_freq=10,
         checkpoint_at_end=True,
         local_dir="./ray_results",
         # restore="./ray_results/PPO_selfplay_twos_2/PPO_Soccer_a8b44_00000_0_2021-09-18_11-13-55/checkpoint_000600/checkpoint-600",
