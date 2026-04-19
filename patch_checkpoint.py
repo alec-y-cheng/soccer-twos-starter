@@ -39,7 +39,7 @@ def patch_checkpoint(input_path, output_path):
 
 if __name__ == "__main__":
     # You can change these paths as needed
-    INPUT = 'checkpoints/checkpoint_000975/checkpoint-975'
-    OUTPUT = 'checkpoints/checkpoint_000975/checkpoint-975-patched'
+    INPUT = 'checkpoints/full_obs_reward_shaping_curric/checkpoint-1697'
+    OUTPUT = 'checkpoints/full_obs_reward_shaping_curric/checkpoint-1697-patched'
     
     patch_checkpoint(INPUT, OUTPUT)

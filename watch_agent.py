@@ -4,7 +4,11 @@ from ray.rllib.agents.ppo import PPOTrainer
 from soccer_twos import EnvType
 
 # ── UPDATE THIS to point at your local checkpoint file ─────────────────────
-CHECKPOINT_PATH = 'checkpoints/checkpoint_000975/checkpoint-975-patched'
+CHECKPOINT_PATH = 'checkpoints/full_obs_reward_shaping_curric/checkpoint-1697-patched'
+
+# ── SELECT THE OBS TYPE the checkpoint was trained with ────────────────────
+# Options: "raw" (336), "simple" (4), "extended" (10)
+OBS_TYPE = "extended" 
 
 TRAIN_CONFIG = {
     "num_gpus": 0,       
@@ -17,6 +21,7 @@ TRAIN_CONFIG = {
         "flatten_branched": True,
         "single_player": True,
         "opponent_policy": lambda *_: 0,
+        "obs_type": OBS_TYPE,
     },
     "model": {
         "vf_share_layers": True,
