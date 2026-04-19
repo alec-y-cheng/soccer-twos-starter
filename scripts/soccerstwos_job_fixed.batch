@@ -37,6 +37,6 @@ echo "GPUs:    $CUDA_VISIBLE_DEVICES"
 echo "================"
 
 # ── Launch training ───────────────────────────────────────────────────────────
-python train_ray_curriculum.py
+python train_ray_simple.py
 
 echo "=== Job finished at $(date) ==="

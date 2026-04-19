@@ -31,9 +31,9 @@ class CustomObservationWrapper(gym.ObservationWrapper):
         
     def get_custom_obs(self, obs):  # to ball and goal
         # convert polar to cartesian with x = r * cos(theta) and y = r * sin(theta), then invert the x and y for relative position
-        ball_hits = obs[0::8]
+        wall_hits = obs[0::8]
         goal_hits = obs[1::8]
-        wall_hits = obs[3::8]
+        ball_hits = obs[2::8]
         distances = obs[7::8]
         num_rays = len(ball_hits)
 
@@ -85,7 +85,8 @@ class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
         return obs
 
     def _get_distance(self, player_obs):
-        ball_hits = player_obs[0::8]
+        # Ball hits are at index 2 in the one-hot encoding
+        ball_hits = player_obs[2::8]
         distances = player_obs[7::8]
 
         closest_dist = 1.0
@@ -113,9 +114,6 @@ class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
             return obs, shaped_reward, done, info
 
     def _calculate_shaping(self, pid, player_obs):
-        # extract every 8th element (the boolean hits for the ball)
-        # and every 8th element starting at index 7 (the distances)
-        
         closest_dist = self._get_distance(player_obs)
         
         if isinstance(self.prev_dist, dict):
@@ -153,7 +151,7 @@ def create_rllib_env(env_config: dict = {}):
         )
     env = soccer_twos.make(**env_config)
     # env = TransitionRecorderWrapper(env)
-    #env = CustomRewardShaping(env)
+    env = CustomRewardShaping(env)
     
     obs_type = env_config.get("obs_type", "simple")
     if obs_type != "raw":
