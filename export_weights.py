@@ -25,12 +25,12 @@ def export_weights(checkpoint_path, output_dir):
         
         clean_striker = {}
         # Mapping for 2 hidden layers
-        clean_striker["hidden.0.weight"] = weights["_hidden_layers.0._model.0.weight"]
-        clean_striker["hidden.0.bias"] = weights["_hidden_layers.0._model.0.bias"]
-        clean_striker["hidden.2.weight"] = weights["_hidden_layers.1._model.0.weight"]
-        clean_striker["hidden.2.bias"] = weights["_hidden_layers.1._model.0.bias"]
-        clean_striker["logits.weight"] = weights["_logits._model.0.weight"]
-        clean_striker["logits.bias"] = weights["_logits._model.0.bias"]
+        clean_striker["hidden.0.weight"] = torch.from_numpy(weights["_hidden_layers.0._model.0.weight"])
+        clean_striker["hidden.0.bias"] = torch.from_numpy(weights["_hidden_layers.0._model.0.bias"])
+        clean_striker["hidden.2.weight"] = torch.from_numpy(weights["_hidden_layers.1._model.0.weight"])
+        clean_striker["hidden.2.bias"] = torch.from_numpy(weights["_hidden_layers.1._model.0.bias"])
+        clean_striker["logits.weight"] = torch.from_numpy(weights["_logits._model.0.weight"])
+        clean_striker["logits.bias"] = torch.from_numpy(weights["_logits._model.0.bias"])
         
         torch.save(clean_striker, os.path.join(output_dir, "striker.pth"))
         print(f"Saved striker.pth to {output_dir}")
@@ -42,12 +42,12 @@ def export_weights(checkpoint_path, output_dir):
         weights = goalie_state["weights"] if "weights" in goalie_state else goalie_state
         
         clean_goalie = {}
-        clean_goalie["hidden.0.weight"] = weights["_hidden_layers.0._model.0.weight"]
-        clean_goalie["hidden.0.bias"] = weights["_hidden_layers.0._model.0.bias"]
-        clean_goalie["hidden.2.weight"] = weights["_hidden_layers.1._model.0.weight"]
-        clean_goalie["hidden.2.bias"] = weights["_hidden_layers.1._model.0.bias"]
-        clean_goalie["logits.weight"] = weights["_logits._model.0.weight"]
-        clean_goalie["logits.bias"] = weights["_logits._model.0.bias"]
+        clean_goalie["hidden.0.weight"] = torch.from_numpy(weights["_hidden_layers.0._model.0.weight"])
+        clean_goalie["hidden.0.bias"] = torch.from_numpy(weights["_hidden_layers.0._model.0.bias"])
+        clean_goalie["hidden.2.weight"] = torch.from_numpy(weights["_hidden_layers.1._model.0.weight"])
+        clean_goalie["hidden.2.bias"] = torch.from_numpy(weights["_hidden_layers.1._model.0.bias"])
+        clean_goalie["logits.weight"] = torch.from_numpy(weights["_logits._model.0.weight"])
+        clean_goalie["logits.bias"] = torch.from_numpy(weights["_logits._model.0.bias"])
         
         torch.save(clean_goalie, os.path.join(output_dir, "goalie.pth"))
         print(f"Saved goalie.pth to {output_dir}")
