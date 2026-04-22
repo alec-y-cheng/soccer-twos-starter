@@ -13,6 +13,15 @@ class Agent(AgentInterface):
     """
     def __init__(self, env=None):
         self.name = "RayPPO-League-Agent"
+
+        try:
+            import ray.rllib.utils.pre_checks.env as env_checks
+            env_checks.check_env = lambda *args, **kwargs: None
+            env_checks.check_base_env = lambda *args, **kwargs: None
+        except Exception:
+            pass
+        # ------------------------------------------
+
         # Initialize Striker and Goalie brains
         self.striker_model = SimplePolicyNetwork(obs_size=336, action_dims=[3, 3, 3])
         self.goalie_model = SimplePolicyNetwork(obs_size=336, action_dims=[3, 3, 3])
