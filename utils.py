@@ -243,23 +243,43 @@ class PrivilegedRewardShaping(gym.core.Wrapper):
 
     def _calculate_shaping(self, pid, info):
         import math
-        closest_dist = 1.0
+        import numpy as np
+        shaping = 0.0
         p_info = info.get(pid, info) if isinstance(info, dict) else {}
         
         if isinstance(p_info, dict) and "player_info" in p_info and "ball_info" in p_info:
-            player_pos = p_info["player_info"]["position"]
-            ball_pos = p_info["ball_info"]["position"]
+            player_pos = np.array(p_info["player_info"]["position"])
+            ball_pos = np.array(p_info["ball_info"]["position"])
+            
+            # 1. Proximity Reward (Distance to Ball)
             # Normalize absolute distance to 0-1 raycast scale (approx 20 units)
             closest_dist = min(1.0, math.dist(player_pos, ball_pos) / 20.0)
             
-        if isinstance(self.prev_dist, dict):
-            prev = self.prev_dist.get(pid, closest_dist)
-            self.prev_dist[pid] = closest_dist
-        else:
-            prev = self.prev_dist
-            self.prev_dist = closest_dist
+            if isinstance(self.prev_dist, dict):
+                prev = self.prev_dist.get(pid, closest_dist)
+                self.prev_dist[pid] = closest_dist
+            else:
+                prev = self.prev_dist
+                self.prev_dist = closest_dist
 
-        shaping = 0.005 * (prev - closest_dist) if closest_dist < 1.0 else 0.0
+            # Bumped from 0.005 to 0.02 to make the "pull" towards the ball stronger
+            shaping += 0.02 * (prev - closest_dist) if closest_dist < 1.0 else 0.0
+
+            # 2. Facing Reward: Point points towards the ball
+            # player_info["rotation_y"] is in degrees. Convert to unit vector.
+            # Unity 0 deg is Z forward, 90 is X right. Let's assume standard unit circle for sim.
+            angle_rad = math.radians(p_info["player_info"]["rotation_y"])
+            forward_vec = np.array([math.sin(angle_rad), math.cos(angle_rad)]) # Unity Z-forward mapping
+            
+            to_ball_vec = ball_pos - player_pos
+            to_ball_norm = np.linalg.norm(to_ball_vec)
+            if to_ball_norm > 0.1:
+                to_ball_vec /= to_ball_norm
+                dot = np.dot(forward_vec, to_ball_vec)
+                # If facing the ball (dot > 0.5), give a small continuous bonus
+                if dot > 0.5:
+                    shaping += 0.001 * dot
+
         return shaping
 
 class GoalieRewardWrapper(gym.core.Wrapper):
@@ -331,7 +351,7 @@ class GoalieRewardWrapper(gym.core.Wrapper):
             # 3. Interception: Massive bonus for touching ball in defensive zone
             dist_to_ball = math.dist(player_pos, ball_pos)
             if dist_to_ball < 1.5 and dist_to_goal < 10.0:
-                shaping += 3.0 # Increased from 1.0 to heavily incentivize blocking/intercepting
+                shaping += 5.0 # Increased from 1.0 to heavily incentivize blocking/intercepting
                 
         return shaping
 
@@ -353,10 +373,12 @@ class TeamRewardWrapper(gym.core.Wrapper):
             for pid, player_obs in obs.items():
                 if pid in [1, 3]: # Goalies
                     shaping = self.goalie_logic._calculate_goalie_shaping(pid, info)
-                    if reward[pid] < -0.5:
+                    if reward[pid] < -0.5: # Conceded Goal
                         shaping -= 5.0
                 else: # Strikers (0, 2)
                     shaping = self.striker_logic._calculate_shaping(pid, info)
+                    if reward[pid] > 0.5: # Scored Goal!
+                        shaping += 10.0 # Huge bonus for actually hitting the net
                     
                 shaped_reward[pid] = reward[pid] + shaping
             return obs, shaped_reward, done, info

@@ -10,61 +10,58 @@ NUM_ENVS_PER_WORKER = 3
 def policy_mapping_fn(agent_id, episode=None, worker=None, **kwargs):
     """
     Team A (Agents 0 and 1) is always our learning duo.
-    Team B (Agents 2 and 3) rotates opponents based on episode ID.
-    PID 0, 2 = Striker. PID 1, 3 = Goalie.
+    Team B (Agents 2 and 3) rotates opponents with a focus on Self-Play "Boss" matches.
     """
     if agent_id == 0:
         return "striker"
     elif agent_id == 1:
         return "goalie"
         
-    # If episode metadata isn't available during init, provide a default
     if episode is None:
         return "baseline"
         
-    # We use episode_id to ensure Agent 2 and Agent 3 in the same match 
-    # agree on which opponent style they are currently playing.
+    # Phase 2: Shift focus to Self-Play as agents are now very smart.
     np.random.seed(episode.episode_id)
-    opponent_type = np.random.choice(["self", "baseline", "dummy"], p=[0.4, 0.4, 0.2])
+    opponent_pool = np.random.choice(["self", "baseline", "dummy"], p=[0.7, 0.2, 0.1])
     
-    if opponent_type == "self":
-        # Mirror match against another copy of the learning team
-        if agent_id == 2: return "striker"
-        if agent_id == 3: return "goalie"
-    elif opponent_type == "baseline":
-        return "baseline" # Baseline agent plays both physical roles with 1 generalized brain
-    elif opponent_type == "dummy":
-        return "dummy" # A completely random untrained agent
+    if opponent_pool == "self":
+        # 15% chance to face "Aggressive" mode (2 Strikers) to stress-test the goalie
+        # 85% chance for standard balanced team
+        is_aggressive = np.random.random() < 0.15
+        if is_aggressive:
+            return "striker" # Both 2 and 3 become strikers
+        else:
+            if agent_id == 2: return "striker"
+            if agent_id == 3: return "goalie"
+    elif opponent_pool == "baseline":
+        return "baseline"
+    elif opponent_pool == "dummy":
+        return "dummy"
 
 class PolicyWeightsCallback(DefaultCallbacks):
     def on_trainer_init(self, *, trainer, **kwargs):
-        striker_path = "ray_results/reward_wrapper_test/PPO_Soccer_e0b85_00000_0_2026-04-20_13-53-46/checkpoint_002479/checkpoint-2479"
-        goalie_path = "ray_results/PPO_selfplay_goalie/PPO_Soccer_68a2c_00000_0_2026-04-21_02-36-21/checkpoint_001008/checkpoint-1008"
+        # RESUMING FROM 10-HOUR LEAGUE RUN
+        master_path = "ray_results/PPO_league_training/PPO_Soccer_2926d_00000_0_2026-04-21_13-04-30/checkpoint_001900/checkpoint-1900"
         baseline_path = "ceia_baseline_agent/ray_results/PPO_selfplay_twos/PPO_Soccer_f475e_00000_0_2021-09-19_15-54-02/checkpoint_002449/checkpoint-2449"
         
         import pickle
         
-        # Load Striker
+        # Load unified Striker and Goalie from the same master file
         try:
-            with open(striker_path, "rb") as f: data = pickle.load(f)
+            with open(master_path, "rb") as f: data = pickle.load(f)
             worker_state = pickle.loads(data["worker"])
             
-            # Accommodate whether it was saved under "default" or "striker"
-            weights = worker_state["policy_map"].get("striker", worker_state["policy_map"].get("default"))
-            trainer.get_policy("striker").set_state(weights)
-            print("✅ Loaded Striker successfully.")
+            # Pull Striker weights
+            s_weights = worker_state["policy_map"]["striker"]
+            trainer.get_policy("striker").set_state(s_weights)
+            
+            # Pull Goalie weights
+            g_weights = worker_state["policy_map"]["goalie"]
+            trainer.get_policy("goalie").set_state(g_weights)
+            
+            print(f"✅ Successfully resumed Striker & Goalie from {master_path}")
         except Exception as e: 
-            print(f"❌ Striker load skipped/error: {e}")
-
-        # Load Goalie
-        try:
-            with open(goalie_path, "rb") as f: data = pickle.load(f)
-            worker_state = pickle.loads(data["worker"])
-            weights = worker_state["policy_map"]["goalie"]
-            trainer.get_policy("goalie").set_state(weights)
-            print("✅ Loaded Goalie successfully.")
-        except Exception as e: 
-            print(f"❌ Goalie load skipped/error: {e}")
+            print(f"❌ Resume failed: {e}")
 
         # Load Baseline
         try:
@@ -88,7 +85,7 @@ if __name__ == "__main__":
 
     tune.run(
         "PPO",
-        name="PPO_league_training",
+        name="PPO_league_training_better_striker_rewards",
         config={
             # system settings
             "num_gpus": 1,

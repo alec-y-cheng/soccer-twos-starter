@@ -12,7 +12,7 @@
 #SBATCH --cpus-per-task=16             
 #SBATCH --gres=gpu:H100:1              
 #SBATCH --mem=64G                      
-#SBATCH -t 10:00:00                    # 10-hour wall time
+#SBATCH -t 12:00:00                    # 10-hour wall time
 #SBATCH --output=logs/soccertwos-%j.out
 #SBATCH --error=logs/soccertwos-%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
