@@ -14,13 +14,17 @@ def patch_checkpoint(input_path, output_path):
     new_state = {}
     new_filters = {}
     
+    # Identify if we should rename 'default' (only for single-agent compatibility)
+    all_policy_names = list(worker['state'].keys())
+    should_rename_default = len(all_policy_names) == 1 and all_policy_names[0] == 'default'
+
     for policy_name, policy_state in worker['state'].items():
         if isinstance(policy_state, dict):
-            # Map multi-agent 'default' back to standard 'default_policy' for local rendering compatibility
-            new_name = 'default_policy' if policy_name == 'default' else policy_name
+            # Rename only if it's the lone 'default' policy to match standard RLlib visualizer expectations
+            new_name = 'default_policy' if (policy_name == 'default' and should_rename_default) else policy_name
             
             if 'weights' not in policy_state:
-                print(f"Structural mismatch detected for policy: '{policy_name}'. Patching to '{new_name}'...")
+                print(f"Structural mismatch detected for policy: '{policy_name}'. Patching '{new_name}'...")
                 # 1. Filter out optimizer variables
                 weights_dict = {k: v for k, v in policy_state.items() if k != '_optimizer_variables'}
                 
@@ -56,6 +60,6 @@ def patch_checkpoint(input_path, output_path):
 
 if __name__ == "__main__":
     # You can change these paths as needed
-    INPUT = 'checkpoints/best/checkpoint-2479'
+    INPUT = 'checkpoints/422testing/checkpoint-1200'
     OUTPUT = INPUT
     patch_checkpoint(INPUT, OUTPUT)
