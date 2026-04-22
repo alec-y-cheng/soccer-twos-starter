@@ -12,7 +12,7 @@
 #SBATCH --cpus-per-task=16             
 #SBATCH --gres=gpu:H100:1              
 #SBATCH --mem=64G                      
-#SBATCH -t 12:00:00                    # 12-hour wall time
+#SBATCH -t 10:00:00                    # 10-hour wall time
 #SBATCH --output=logs/soccertwos-%j.out
 #SBATCH --error=logs/soccertwos-%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
@@ -37,6 +37,6 @@ echo "GPUs:    $CUDA_VISIBLE_DEVICES"
 echo "================"
 
 # ── Launch training ───────────────────────────────────────────────────────────
-python train_ray_simple.py
+python train_ray_selfplay_goalie.py
 
 echo "=== Job finished at $(date) ==="

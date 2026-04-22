@@ -1,0 +1,42 @@
+#!/bin/bash
+# Soccer Twos RL Training Job — PACE ICE Cluster (SLURM)
+# Submit with:  sbatch scripts/soccerstwos_job_fixed.batch
+# from the project root: /home/hice1/acheng324/scratch/soccer-twos-starter
+
+# ── Job metadata ──────────────────────────────────────────────────────────────
+#SBATCH --job-name=soccertwos
+#SBATCH --partition=coe-gpu            # H200s here
+#SBATCH --qos=coe-ice                 
+#SBATCH --nodes=1                      
+#SBATCH --ntasks=1                     
+#SBATCH --cpus-per-task=16             
+#SBATCH --gres=gpu:H100:1              
+#SBATCH --mem=64G                      
+#SBATCH -t 8:00:00                    # 12-hour wall time
+#SBATCH --output=logs/soccertwos-%j.out
+#SBATCH --error=logs/soccertwos-%j.err
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=acheng324@gatech.edu
+
+# ── Environment ───────────────────────────────────────────────────────────────
+# Always cd to the project root so relative paths (curriculum.yaml, ray_results/) work
+cd /home/hice1/acheng324/scratch/soccer-twos-starter
+
+# Create logs dir if needed
+mkdir -p logs ray_results
+
+# Activate the conda environment (full path required on compute nodes)
+source /home/hice1/acheng324/scratch/miniconda/etc/profile.d/conda.sh
+conda activate /home/hice1/acheng324/scratch/conda_envs/soccertwos
+
+echo "=== Job Info ==="
+echo "Node:    $(hostname)"
+echo "Time:    $(date)"
+echo "Python:  $(which python)"
+echo "GPUs:    $CUDA_VISIBLE_DEVICES"
+echo "================"
+
+# ── Launch training ───────────────────────────────────────────────────────────
+python train_ray_selfplay.py
+
+echo "=== Job finished at $(date) ==="

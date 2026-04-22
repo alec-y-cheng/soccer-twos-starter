@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     analysis = tune.run(
         "PPO",
-        name="PPO_full_obs_reward_shaping_curric",
+        name="reward_wrapper_test",
         config={
             # system settings
             "num_gpus": 1,
@@ -75,6 +75,7 @@ if __name__ == "__main__":
             # RL setup
             "env": "Soccer",
             "env_config": {
+                "reward_shaping": "privileged",  # toggle between this and custom
                 "num_envs_per_worker": NUM_ENVS_PER_WORKER,
                 "variation": EnvType.team_vs_policy,
                 "multiagent": False,

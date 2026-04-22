@@ -9,31 +9,37 @@ NUM_ENVS_PER_WORKER = 3
 
 
 def policy_mapping_fn(agent_id, *args, **kwargs):
-    if agent_id == 0:
-        return "default"  # Choose 01 policy for agent_01
+    # Agents 0 and 2 are usually Strikers (closer to center) -> map to "default" (from checkpoint)
+    # Agents 1 and 3 are usually Goalies (closer to net)     -> map to "goalie"
+    if agent_id in [0, 2]:
+        return "default"
     else:
-        return np.random.choice(
-            ["default", "opponent_1", "opponent_2", "opponent_3"],
-            size=1,
-            p=[0.50, 0.25, 0.125, 0.125],
-        )[0]
+        return "goalie"
 
+class PolicyWeightsCallback(DefaultCallbacks):
+    def on_trainer_init(self, *, trainer, **kwargs):
+        checkpoint_path = "ray_results/reward_wrapper_test/PPO_Soccer_e0b85_00000_0_2026-04-20_13-53-46/checkpoint_002479/checkpoint-2479"
+        print(f"Surgically loading Striker weights from {checkpoint_path}")
+        
+        try:
+            # We only want to load the "default" policy weights from the checkpoint
+            # and inject them into our local "default" policy.
+            import pickle
+            with open(checkpoint_path, "rb") as f:
+                checkpoint_data = pickle.load(f)
+            
+            # Extract weights for the 'default' policy specifically
+            worker_state = pickle.loads(checkpoint_data["worker"])
+            striker_weights = worker_state["policy_map"]["default"]
+            
+            # Apply them
+            trainer.get_policy("default").set_state(striker_weights)
+            print("Successfully injected Striker weights!")
+        except Exception as e:
+            print(f"Warning: Could not load weights surgically: {e}")
+            print("Training will continue with fresh weights for both.")
 
-class SelfPlayUpdateCallback(DefaultCallbacks):
-    def on_train_result(self, **info):
-        """
-        Update multiagent oponent weights when reward is high enough
-        """
-        if info["result"]["episode_reward_mean"] > 0.5:
-            print("---- Updating opponents!!! ----")
-            trainer = info["trainer"]
-            trainer.set_weights(
-                {
-                    "opponent_3": trainer.get_weights(["opponent_2"])["opponent_2"],
-                    "opponent_2": trainer.get_weights(["opponent_1"])["opponent_1"],
-                    "opponent_1": trainer.get_weights(["default"])["default"],
-                }
-            )
+# Removed SelfPlayUpdateCallback since we aren't league training opponents here
 
 
 if __name__ == "__main__":
@@ -50,7 +56,7 @@ if __name__ == "__main__":
 
     analysis = tune.run(
         "PPO",
-        name="PPO_selfplay_striker",
+        name="PPO_selfplay_goalie",
         config={
             # system settings
             "num_gpus": 1,
@@ -58,23 +64,21 @@ if __name__ == "__main__":
             "num_envs_per_worker": NUM_ENVS_PER_WORKER,
             "log_level": "INFO",
             "framework": "torch",
-            "callbacks": SelfPlayUpdateCallback,
+            "callbacks": PolicyWeightsCallback,
             # RL setup
             "multiagent": {
                 "policies": {
-                    "default": (None, obs_space, act_space, {}),
-                    "opponent_1": (None, obs_space, act_space, {}),
-                    "opponent_2": (None, obs_space, act_space, {}),
-                    "opponent_3": (None, obs_space, act_space, {}),
+                    "default": (None, obs_space, act_space, {}), # Restored from checkpoint
+                    "goalie": (None, obs_space, act_space, {}),  # Freshly created for training
                 },
                 "policy_mapping_fn": tune.function(policy_mapping_fn),
-                "policies_to_train": ["default"],
+                "policies_to_train": ["goalie"], # Train goalie, freeze default (striker)!
             },
             "env": "Soccer",
             "env_config": {
                 "num_envs_per_worker": NUM_ENVS_PER_WORKER,
-                "reward_shaping": "custom",  # Use the Euclidean Teacher
-                "obs_type": "raw",           # Use the 4-feature Omniscient Map
+                "reward_shaping": "goalie",  # Use the Geometric Goalie reward logic!
+                "obs_type": "raw",           
             },
             "model": {
                 "vf_share_layers": True,
@@ -85,10 +89,10 @@ if __name__ == "__main__":
             "batch_mode": "complete_episodes",
         },
         stop={"timesteps_total": 15000000, "time_total_s": 28800,},  # 8h
-        checkpoint_freq=100,
         checkpoint_at_end=True,
         local_dir="./ray_results",
-        # restore="ray_results/PPO_selfplay_custom_reward_only/PPO_Soccer_fdd3d_00000_0_2026-04-20_17-57-58/checkpoint_000210/checkpoint-210",
+        # NOTE: We no longer use 'restore' here because it causes Multi-Agent mismatches.
+        # The weights are now loaded surgically via PolicyWeightsCallback.
     )
 
     # Gets best trial based on max accuracy across all training iterations.
