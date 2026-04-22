@@ -6,7 +6,7 @@ from soccer_twos import AgentInterface
 # Import our standalone model
 from .model import SimplePolicyNetwork
 
-class SubmissionAgent(AgentInterface):
+class Agent(AgentInterface):
     """
     Stand-alone agent that uses Pure PyTorch for inference.
     Handles both Striker and Goalie roles in a 2v2 environment.
