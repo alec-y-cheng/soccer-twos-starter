@@ -12,6 +12,7 @@ class SubmissionAgent(AgentInterface):
     Handles both Striker and Goalie roles in a 2v2 environment.
     """
     def __init__(self, env=None):
+        self.name = "RayPPO-League-Agent"
         # Initialize Striker and Goalie brains
         self.striker_model = SimplePolicyNetwork(obs_size=336, action_dims=[3, 3, 3])
         self.goalie_model = SimplePolicyNetwork(obs_size=336, action_dims=[3, 3, 3])
