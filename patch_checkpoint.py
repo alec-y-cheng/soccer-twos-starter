@@ -60,6 +60,6 @@ def patch_checkpoint(input_path, output_path):
 
 if __name__ == "__main__":
     # You can change these paths as needed
-    INPUT = 'checkpoints/422testing/checkpoint-1200'
+    INPUT = 'checkpoints/HU_PPO3_selfplay_agent/ray_results/PPO_selfplay/checkpoint-7500'
     OUTPUT = INPUT
     patch_checkpoint(INPUT, OUTPUT)
