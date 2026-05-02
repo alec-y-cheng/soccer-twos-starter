@@ -52,6 +52,28 @@ def export_weights(checkpoint_path, output_dir):
         torch.save(clean_goalie, os.path.join(output_dir, "goalie.pth"))
         print(f"Saved goalie.pth to {output_dir}")
 
+    # --- NEW: Copy the Boilerplate Code ---
+    import shutil
+    # The parent directory of 'model/' is the package root
+    package_root = os.path.dirname(output_dir)
+    source_dir = "submission"
+    
+    files_to_copy = ["agent_ray.py", "model.py", "utils.py", "__init__.py"]
+    print(f"Copying boilerplate code to {package_root}...")
+    
+    for f in files_to_copy:
+        src = os.path.join(source_dir, f)
+        dst = os.path.join(package_root, f)
+        if os.path.exists(src):
+            shutil.copy(src, dst)
+        else:
+            print(f"Warning: Could not find {src} to copy!")
+    
+    print(f"✓ Full submission package created at: {package_root}")
+
 if __name__ == "__main__":
+    # Example usage:
+    # This will create a folder 'BetterStrikerRewards' containing everything 
+    # needed for submission (Code + Weights).
     CHECKPOINT = "ray_results/PPO_league_training/PPO_Soccer_2926d_00000_0_2026-04-21_13-04-30/checkpoint_001900/checkpoint-1900"
-    export_weights(CHECKPOINT, "submission/model")
+    export_weights(CHECKPOINT, "WasThisBest/model")

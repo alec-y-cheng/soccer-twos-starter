@@ -41,8 +41,10 @@ def policy_mapping_fn(agent_id, episode=None, worker=None, **kwargs):
 class PolicyWeightsCallback(DefaultCallbacks):
     def on_trainer_init(self, *, trainer, **kwargs):
         # RESUMING FROM 10-HOUR LEAGUE RUN
-        master_path = "ray_results/PPO_league_training/PPO_Soccer_2926d_00000_0_2026-04-21_13-04-30/checkpoint_001900/checkpoint-1900"
-        baseline_path = "ceia_baseline_agent/ray_results/PPO_selfplay_twos/PPO_Soccer_f475e_00000_0_2021-09-19_15-54-02/checkpoint_002449/checkpoint-2449"
+        # ray_results/PPO_league_training/PPO_Soccer_4ec4b_00000_0_2026-04-22_02-48-45/checkpoint_001800/checkpoint-1800
+        # this recent one is trained on itself but the old rewards, the older one is trained on better striker rewards (1-34)
+        master_path = "ray_results/PPO_league_training/PPO_Soccer_4ec4b_00000_0_2026-04-22_02-48-45/checkpoint_001800/checkpoint-1800"
+        baseline_path = "ray_results/PPO_league_training/PPO_Soccer_4ec4b_00000_0_2026-04-22_02-48-45/checkpoint_001800/checkpoint-1800"
         
         import pickle
         

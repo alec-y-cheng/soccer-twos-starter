@@ -73,81 +73,6 @@ class SimpleObservationWrapper(gym.core.Wrapper):
                 
         return np.array([ball_x, ball_y, goal_x, goal_y], dtype=np.float32)
 
-
-class ExtendedObservationWrapper(gym.core.Wrapper):  
-    def __init__(self, env):
-        super().__init__(env)
-        self.cached_info = None
-        self.observation_space = gym.spaces.Box(
-            low=-np.inf, high=np.inf, shape=(10,), dtype=np.float32
-        )
-    
-    def reset(self, **kwargs):
-        self.cached_info = None
-        obs = self.env.reset(**kwargs)
-        return self.observation(obs)
-
-    def step(self, action):
-        obs, reward, done, info = self.env.step(action)
-        self.cached_info = info
-        return self.observation(obs), reward, done, info
-        
-    def observation(self, obs):
-        if isinstance(obs, dict):
-            return {pid: self.get_custom_obs(pid, ob) for pid, ob in obs.items()}
-        return self.get_custom_obs(0, obs)
-        
-    def get_custom_obs(self, pid, obs):
-        obs = np.nan_to_num(obs, nan=0.0, posinf=1.0, neginf=-1.0)
-        goal_hits = obs[1::8]
-        wall_hits = obs[3::8]
-        distances = obs[7::8]
-        num_rays = len(goal_hits)
-        
-        if num_rays == 0:
-            return np.zeros(10, dtype=np.float32)
-
-        ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-
-        for i in range(num_rays):
-            angle = (i / num_rays) * 2 * np.pi
-            dist = distances[i]
-            if goal_hits[i] == 1.0:
-                goal_x = dist * np.cos(angle)
-                goal_y = dist * np.sin(angle)
-                goal_seen = 1.0
-                
-        p_info = None if self.cached_info is None else (
-            self.cached_info.get(pid, self.cached_info) if isinstance(self.cached_info, dict) else self.cached_info
-        )
-        
-        if isinstance(p_info, dict) and "player_info" in p_info and "ball_info" in p_info:
-            px, pz = p_info["player_info"]["position"]
-            bx, bz = p_info["ball_info"]["position"]
-            rot_y = p_info["player_info"]["rotation_y"]
-            
-            dx = bx - px
-            dz = bz - pz
-            
-            theta = np.radians(rot_y)
-            cos_t, sin_t = np.cos(theta), np.sin(theta)
-            
-            rel_x = dx * cos_t + dz * sin_t
-            rel_y = -dx * sin_t + dz * cos_t
-            
-            ball_x = rel_x / 20.0
-            ball_y = rel_y / 20.0
-            ball_seen = 1.0
-
-        # wall seen from 4 directions
-        wall_f = distances[21] if wall_hits[21] else 1.0
-        wall_b = distances[0]  if wall_hits[0]  else 1.0
-        wall_l = distances[10] if wall_hits[10] else 1.0
-        wall_r = distances[31] if wall_hits[31] else 1.0
-
-        return np.array([ball_x, ball_y, ball_seen, goal_x, goal_y, goal_seen, wall_f, wall_b, wall_l, wall_r], dtype=np.float32)
-    
-
 class CustomRewardShaping(gym.core.Wrapper): # distance to ball metric
     def __init__(self, env):
         super().__init__(env)
@@ -267,7 +192,7 @@ class PrivilegedRewardShaping(gym.core.Wrapper):
 
             # 2. Facing Reward: Point points towards the ball
             # player_info["rotation_y"] is in degrees. Convert to unit vector.
-            # Unity 0 deg is Z forward, 90 is X right. Let's assume standard unit circle for sim.
+            # Unity 0 deg is Z forward, 90 is X right
             angle_rad = math.radians(p_info["player_info"]["rotation_y"])
             forward_vec = np.array([math.sin(angle_rad), math.cos(angle_rad)]) # Unity Z-forward mapping
             
@@ -404,14 +329,10 @@ def create_rllib_env(env_config: dict = {}):
     """
     if hasattr(env_config, "worker_index"):
         import os
-        # Use SLURM_JOB_ID to guarantee a unique port block for each concurrent Slurm job.
-        job_id = int(os.environ.get("SLURM_JOB_ID", "0"))
+        job_id = int(os.environ.get("SLURM_JOB_ID", "0"))  #fix slurm job port conflicts
         if job_id == 0:
             import random
             job_id = random.randint(100, 999)
-        # Incorporate job_id for uniqueness, but keep the final worker_id under 10000
-        # to prevent ML-Agents from overflowing when it opens offset auxiliary ports.
-        # Ensure a gap of at least 100 ports per worker to prevent "Address already in use" overlapping!
         env_config["worker_id"] = (
             job_id 
             + env_config.worker_index * 100
