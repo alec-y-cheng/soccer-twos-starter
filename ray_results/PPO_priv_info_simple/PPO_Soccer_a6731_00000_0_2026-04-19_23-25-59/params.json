@@ -1,0 +1,29 @@
+{
+  "batch_mode": "complete_episodes",
+  "callbacks": "<class '__main__.CurriculumUpdateCallback'>",
+  "env": "Soccer",
+  "env_config": {
+    "flatten_branched": true,
+    "multiagent": false,
+    "num_envs_per_worker": 3,
+    "obs_type": "simple",
+    "opponent_policy": "<function <lambda> at 0x1554784baa60>",
+    "single_player": true,
+    "variation": "EnvType.team_vs_policy"
+  },
+  "framework": "torch",
+  "log_level": "INFO",
+  "model": {
+    "fcnet_activation": "relu",
+    "fcnet_hiddens": [
+      256,
+      256
+    ],
+    "vf_share_layers": true
+  },
+  "num_envs_per_worker": 3,
+  "num_gpus": 1,
+  "num_workers": 14,
+  "rollout_fragment_length": 100,
+  "train_batch_size": 4200
+}
