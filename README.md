@@ -74,4 +74,7 @@ To examine the baseline agent, you must extract the `ceia_baseline_agent` folder
 , to examine the random agent vs. the baseline agent.
 
 
+## Agent Testing
+Look in haoyang branch to find each various reward-shaped agents, and in alec branch to find observaiton shaped agents and role specialized agents. They are located in their own submission-format folders as well as in ray_results.
+
 
